@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+.btn {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.btn:hover {
+  background-color: rgb(55, 55, 255);
+}
+
+.icon1 {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.icon1 svg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.icon1.hidden {
+  display: none;
+}
+
+/* WebSocet */
+
+.chat {
+  width: 400px;
+  margin: 15px auto;
+  padding: 10px;
+ box-shadow: 5px 5px 10px 1px #666666;
+}
+
+.info_output {
+  text-align: center;
+}
+
+.chat_output {
+  margin: 10px 0 0;
+  border: 3px solid lightskyblue;
+  padding: 10px;
+  height: 250px;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.chat_output > div {
+  max-width: 80%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  color: #000;
+  font-size: 14px;
+  line-height: 110%;
+  font-weight: 600;
+  border: 3px solid lightskyblue;
+}
+
+.chat_output .recived {
+  border: 3px solid blue;
+  align-self: flex-start;
+
+}
+.chat_output .sent {
+  align-self: flex-end;
+  border: 3px solid green;
+}
+.chat_output .red {
+  max-width: 80%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 110%;
+  font-weight: 600;
+  align-self: flex-end;
+  border: 3px solid red;
+}
+.chat_input {
+  display: flex;
+  align-items: center;
+}
+.chat_input input {
+  padding: 5px;
+  border: 3px solid lightskyblue;
+  width: 100%;
+  font-size: 11px;
+}
+
+.chat_input input:focus,
+.chat_input input:active {
+  all: unset;
+  padding: 5px;
+  border: 3px solid lightskyblue;
+  width: 100%;
+  font-size: 11px;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.btn_ch {
+  padding: 9px 10px;
+  color: #000;
+  font-size: 11px;
+  line-height: 100%;
+  white-space: nowrap;
+  background: lightskyblue;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: all 0.2s ease-in;
+}
+.btn_ch:hover {
+  background: rgb(78, 187, 255);
+}
